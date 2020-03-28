@@ -1,0 +1,27 @@
+.side-bar
+  .side-bar__user-name
+    .side-bar__user-name__top-items
+      .side-bar__user-name__top-items__name name
+      .side-bar__user-name__top-items__icons
+        = link_to "#", class: "side-bar__user-name__top-items__icons__icon" do
+          = icon('fas', 'edit', class: "icon__edit")
+          %span<>
+        = link_to "#", class: "side-bar__user-name__top-items__icons__icon" do
+          = icon('fa', 'cog', class: "icon__cog")
+          %span<>
+
+
+  .side-bar__groups-list
+    .side-bar__groups-list__group
+      .side-bar__groups-list__group__name techcamp
+      .side-bar__groups-list__group__message まだメッセージがありません
+    
+    .side-bar__groups-list__group
+      .side-bar__groups-list__group__name techcamp
+      .side-bar__groups-list__group__message まだメッセージがありません
+
+    .side-bar__groups-list__group
+      .side-bar__groups-list__group__name techcamp
+      .side-bar__groups-list__group__message まだメッセージがありません
+
+

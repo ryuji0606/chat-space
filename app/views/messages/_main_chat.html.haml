@@ -1,0 +1,39 @@
+.chat-main
+  .chat-main__group-info
+    .chat-main__group-info__left-box
+      .chat-main__group-info__left-box__group-name test
+      .chat-main__group-info__left-box__members
+        .chat-main__group-info__left-box__members__member Member：
+        .chat-main__group-info__left-box__members__member-name name
+
+    = link_to "#", class: "chat-main__group-info__edit-btn" do
+      .chat-main__group-info__edit__btn
+        Edit
+
+  .chat-main__messages
+    .chat-main__messages__message
+      .chat-main__messages__message__info
+        .chat-main__messages__message__info__name name
+        .chat-main__messages__message__info__date 2020/03/22(sun)18:00:00
+      .chat-main__messages__message__text テスト
+
+    .chat-main__messages__message
+      .chat-main__messages__message__info
+        .chat-main__messages__message__info__name name
+        .chat-main__messages__message__info__date 2020/03/22(sun)18:00:00
+      .chat-main__messages__message__text テスト
+
+    .chat-main__messages__message
+      .chat-main__messages__message__info
+        .chat-main__messages__message__info__name name
+        .chat-main__messages__message__info__date 2020/03/22(sun)18:00:00
+      .chat-main__messages__message__text テスト
+
+  .chat-main__form
+    %form.chat-main__form__new-message
+      .chat-main__form__new-message__input-box
+        %input{type: "text", class: "chat-main__form__new-message__input-box__text", placeholder: "type a message"}
+        %label{class: "chat-main__form__new-message__input-box__image"}
+          = icon('fas','image')
+          %input{type: "file", class: "chat-main__form__new-message__input-box__image__file"}
+      %input{type: "submit",value: "Send", class: "chat-main__form__new-message__submit-btn" }
