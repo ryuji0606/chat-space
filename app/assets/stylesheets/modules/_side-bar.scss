@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.side-bar{
+  width: 300px;
+  height: 100vh;
+  float: left;
+  &__user-name{
+    height: 100px;
+    background-color: #253141;
+    display: flex;
+    align-items: center;
+    &__top-items{
+      height: 20px;
+      width: 260px;
+      margin: 0 20px;
+      line-height: 20px;
+      display: flex;
+      justify-content: space-between;
+      &__name{
+        color: $white;
+        font-weight: bold;
+        font-size: 16px;      
+      }
+      &__icons{
+        &__icon{
+          text-decoration: none;
+          color: $white;
+          .icon__edit{
+            padding: 0 5px 0 0 ;
+          }
+        }
+      }
+    }  
+  }
+  &__groups-list{  
+    height: calc(100% - 100px);
+    background-color: #2f3e51;
+    &__group{
+      color: $white;
+      padding: 20px 20px 40px 20px; 
+      &__name{
+        font-size: 15px;
+      }
+      &__message{
+        font-size: 11px;
+        padding-top: 5px;
+      }
+    }
+  }
+}
