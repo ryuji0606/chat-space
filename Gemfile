@@ -59,3 +59,5 @@ gem 'haml-rails'
 gem 'font-awesome-sass'
 # ログイン
 gem 'devise'
+# デバックツール
+gem 'pry-rails'
