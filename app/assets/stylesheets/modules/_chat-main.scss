@@ -74,12 +74,9 @@
     height: 90px;
     padding: 20px 40px;
     background-color: #ddd;
-
     &__new-message{
-      display: flex;
       &__input-box{
         position: relative;
-        width: 100%;
         &__text{
           height: 50px;
           width: 100%;
@@ -110,3 +107,8 @@
     }
   }
 }
+
+.new_message {
+display: flex;
+}
+

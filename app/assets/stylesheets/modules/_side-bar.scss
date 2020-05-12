@@ -37,8 +37,11 @@
   &__groups-list{  
     height: calc(100% - 100px);
     background-color: #2f3e51;
+    a{
+    color: $white;
+    text-decoration: none;
+    }
     &__group{
-      color: $white;
       padding: 20px 20px 40px 20px; 
       &__name{
         font-size: 15px;
