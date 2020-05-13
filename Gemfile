@@ -61,3 +61,7 @@ gem 'font-awesome-sass'
 gem 'devise'
 # デバックツール
 gem 'pry-rails'
+##画像アップロード
+gem 'carrierwave'
+##画像のリサイズ
+gem 'mini_magick'
