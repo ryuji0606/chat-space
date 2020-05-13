@@ -1,12 +1,15 @@
 .chat-main
   .chat-main__group-info
     .chat-main__group-info__left-box
-      .chat-main__group-info__left-box__group-name test
+      .chat-main__group-info__left-box__group-name
+        = @group.name
       .chat-main__group-info__left-box__members
         .chat-main__group-info__left-box__members__member Member：
-        .chat-main__group-info__left-box__members__member-name name
+        .chat-main__group-info__left-box__members__member-name
+          - @group.group_users.each do |group_user|
+            = group_user.user.name
 
-    = link_to "#", class: "chat-main__group-info__edit-btn" do
+    = link_to edit_group_path(@group.id), class: "chat-main__group-info__edit-btn" do
       .chat-main__group-info__edit__btn
         Edit
 
