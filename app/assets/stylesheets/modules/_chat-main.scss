@@ -46,6 +46,7 @@
     height: calc(100vh - 190px);
     border-top: solid 1px #eeeeee;
     padding: 46px 40px;
+    overflow: scroll;
     
     &__message{
       padding-bottom: 46px;
