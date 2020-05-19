@@ -8,6 +8,8 @@ Bundler.require(*Rails.groups)
 
 module ChatSpace
   class Application < Rails::Application
+    #日時表示を日本時間に修正
+    config.time_zone = 'Tokyo'
     config.generators do |g|
       g.stylesheets false
       g.javascripts false
