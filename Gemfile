@@ -10,7 +10,7 @@ end
 gem 'rails', '~> 5.0.7', '>= 5.0.7.2'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.3.18', '< 0.6.0'
-# Use Puma as the app server
+# Use Puma as the app servere
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -73,7 +73,10 @@ gem 'pry-rails'
 gem 'carrierwave'
 ##画像のリサイズ
 gem 'mini_magick'
+#画像をアップロードする際、外部のストレージを選択しアップロードするのを補助してくれるGem
+gem 'fog-aws'
 
 group :production do
   gem 'unicorn', '5.4.1'
 end
+
