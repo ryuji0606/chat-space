@@ -21,5 +21,3 @@ public/uploads/*
 .DS_Store
 
 config/secrets.yml
-
-# 「.gitignore」というファイルに設定を行うことで、Gitの管理下から除外することができる
